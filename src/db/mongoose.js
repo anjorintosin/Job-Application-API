@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const mongodbURL = 'mongodb://127.0.0.1:27017/job-application-api'
+const mongodbURL = process.env.MONGODB_URL
 
 mongoose.connect(mongodbURL, {
    useNewUrlParser: true,
